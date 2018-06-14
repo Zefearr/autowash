@@ -1,0 +1,19 @@
+.footer {
+    min-height: 300px;
+    width:100%;
+   
+    display: block;
+    background-color:#111;
+    color:#fff;
+    position: relative;
+    margin-bottom:0;
+}
+.footer::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+.footer p {
+    margin:0;
+    padding:0;
+}

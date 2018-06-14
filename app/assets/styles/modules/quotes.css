@@ -1,0 +1,26 @@
+.quote1 {
+    color:#fff;
+    position: relative;
+    top:7%;
+    display: block;
+   
+    line-height: 1.30;
+    font-size:14px;
+    margin:0;
+}
+
+.quote2 {
+    color:#fff;
+    position: relative;
+    top:20%;
+    display: block;
+    font-weight: 400;
+    line-height: 1.30;
+    font-size:14px;
+    margin:0;
+}
+@media(min-width:1024px) {
+    .quote1, .quote2 {  
+        font-size: 18px;
+    }
+}

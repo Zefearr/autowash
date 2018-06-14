@@ -8,7 +8,7 @@ var gulp = require('gulp'),  // import gulp as variable for inv (gulp package)
 
 gulp.task('styles', function() {
     return gulp.src('./app/assets/styles/styles.css')
-        .pipe(postcss([autoprefixer, cssvars, nested, cssImport]))
+        .pipe(postcss([cssvars, nested, cssImport, autoprefixer]))
         .on('error', function(errorInfo){
             console.log(errorInfo.toString());
             this.emit('end');

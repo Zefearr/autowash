@@ -1,0 +1,36 @@
+.house {
+    position: absolute; 
+   
+    width:1833px;
+    height: 533px;  
+ 
+  
+    
+    bottom: 1500px;
+    display: block;
+    left:50%;
+    transform:translateX(-50%);
+    /* background-color:transparent; */
+    /* background-color:#fff; */
+   
+    background:url('../../../images/bottomhouse.png');
+    opacity: 1;
+  
+   
+   
+}
+@media(min-width:1025px) {
+    .house {
+        bottom:800px;
+    }
+}
+.form-container {
+    max-width:1270px;
+    min-height: 300px;
+    background-color:gray;
+    margin: 0 auto;
+}
+
+  
+
+
