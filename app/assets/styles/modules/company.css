@@ -6,7 +6,7 @@
 
 .form-simple-cars {
  position: relative;
- background: url('../../../images/notebook.png') repeat;
+ background: url('../../images/notebook.png') repeat;
 }
 .forms {
     display: block;
@@ -99,9 +99,9 @@ span.content {
     padding: 12px 0;
      
 }
-.map-section {
-    /* background:url('../../../images/dark_brick_wall.png') repeat;  */
-}
+/* .map-section {
+     background:url('../../../images/dark_brick_wall.png') repeat;  
+} */ 
 .forms label span {
     transition: .3s all ease;
     font-weight: 600;
@@ -111,7 +111,7 @@ span.content {
     width: 32px;
     height: 32px;
     display: inline-block;
-    background: url('../../../images/car-wash.png');
+    background: url('../../images/car-wash.png');
     opacity: .8;
     vertical-align: -5px;
    
@@ -122,7 +122,7 @@ span.content {
     display: inline-block;
     opacity: .8;
     margin-right: 5px;
-    background: url('../../../images/vacuum-cleaner.png'); 
+    background: url('../../images/vacuum-cleaner.png'); 
     vertical-align: -5px;
 }
 
@@ -219,15 +219,15 @@ input[type=checkbox]:checked + label span {
     font-size: 18px;
 }
 span#carsmall {
-    background: url('../../../images/small_cars.png');
+    background: url('../../images/small_cars.png');
     background-position: center;
 }
 span#carsbig {
-    background: url('../../../images/jeep_cars.png');
+    background: url('../../images/jeep_cars.png');
     background-position: center;
 }
 span#carshuge{
-    background: url('../../../images/huge_cars.png');  
+    background: url('../../images/huge_cars.png');  
     background-position: center;
 }
 
@@ -264,7 +264,7 @@ span#carshuge{
     display: block;
     cursor: pointer;
     float:left;
-    background: url('../../../images/small_car.svg') center no-repeat;
+    background: url('../../images/small_car.svg') center no-repeat;
     background-size: contain;
     border:none;
     /* border:1px solid gray; */
@@ -279,7 +279,7 @@ span#carshuge{
         height: 60px;
     }
 }
-.select-type button:last-child {
+.select-type button:last-child { 
     margin-right: 0;
 }
 .btn:active {
