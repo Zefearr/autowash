@@ -1,12 +1,11 @@
 .footer {
-    min-height: 300px;
+    min-height: 50px;
     width:100%;
-   
     display: block;
-    background-color:#111;
+    background-color:rgb(24, 24, 24);
     color:#fff;
     position: relative;
-    margin-bottom:0;
+   
 }
 .footer::after {
     content:"";
@@ -16,4 +15,32 @@
 .footer p {
     margin:0;
     padding:0;
+    display: block;
+    font-weight: 400;
+    color:rgb(156, 156, 156);
+    
+   
+    
+    z-index: 3;
+   
+    font-size: 12px;
+    width:100%;
+    text-align: center;
+    
+}
+.footer a {
+    color:rgb(156, 156, 156);
+    text-decoration: none;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.footer-wrapper {
+    width:100%;
+    
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-top:15px;
+    padding-bottom:10px;
+    
 }

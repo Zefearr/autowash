@@ -13,3 +13,13 @@
 .site-header.fixed {
     transform: translateY(0); 
 }
+.logotip-header {
+    text-indent: -9999px;
+    color:#fff;
+    display: block;
+    float: left;
+    width:200px;
+    height: 80px;
+    margin-left: 50px;
+    background:url('/assets/images/logo4.svg') center no-repeat;
+}

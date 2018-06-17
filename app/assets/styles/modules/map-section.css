@@ -1,0 +1,90 @@
+.working-hours ul {
+    list-style:none;
+    color:rgb(221, 221, 221);
+    margin:0;
+    margin-top:20px;
+    border-top:1px solid white;
+    padding:0;
+    padding:10px;
+}
+.working-hours ul li {
+    padding:10px 0;
+    font-size: 20px;
+}
+.working-hours ul li span {
+    font-weight: 600;
+}
+.working-hours img  {
+    display: block;
+    margin: 0 auto;
+    margin-top:20px;
+    max-width: 100%;
+}
+.coupon {
+    padding:15px 20px;
+    background-color:orange;
+    border:none;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    margin-top:20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px rgb(236, 139, 11);
+    font-weight: 600;
+    border-radius: 5px;
+}
+.space {
+    padding-left: 45px;
+}
+.coupon-container {
+    background-color:#fff;
+    padding:10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;  
+    height: 100%;
+    transform:translateX(-100%);
+    z-index: 10;
+    width:100%;
+    transition: .3s all ease;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    margin: auto;
+
+
+}
+.overlay-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.coupon-container p {
+    margin: auto;
+    font-size:18px;
+    font-weight: 600;
+    padding-bottom:20px;
+}
+.want-discount {
+    background-color:orange;
+    padding:5px 7px;
+    margin-top:10px;
+    display: block;
+}
+.close-overlay:hover {
+    color:orangered;
+}
+.close-overlay {
+    position: absolute;
+    right:30px;
+    top:30px;
+    font-size: 40px;
+    transform:scaleX(1.5);
+    cursor: pointer;
+}
+.overlay-opened {
+    visibility: visible;
+    opacity: 1;
+    transform:translateX(0);
+}

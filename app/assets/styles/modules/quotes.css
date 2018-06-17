@@ -1,26 +1,91 @@
 .quote1 {
     color:#fff;
     position: relative;
-    top:7%;
+    top:10%;
     display: block;
-   
-    line-height: 1.30;
+    line-height: 1.40;
     font-size:14px;
+    transition: .5s all ease;
+    font-weight:400;
+    text-align: center;
     margin:0;
+    transform: translateX(-200%);
 }
 
 .quote2 {
     color:#fff;
     position: relative;
-    top:20%;
+    top:23%;
+    text-align: center;
     display: block;
     font-weight: 400;
-    line-height: 1.30;
+    line-height: 1.40;
     font-size:14px;
     margin:0;
+    transition: .5s all ease;
+    transform: translateX(200%);
+}
+.quote3 {
+    color:#fff;
+    position: relative;
+    top:30%;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.40;
+    font-size:14px;
+    margin:0;
+    transition: .5s all ease;
+    transform: translateX(-200%);
+    
+   
+}
+span.arrow {
+    width:40px;
+     height: 60px;
+     display: block;
+     background:url('/assets/images/arrow.svg') center no-repeat;
+     position: absolute;
+     bottom: 0;
+     left:0;
+     z-index: 1;
+     left:50%;
+     transition: .5s all ease;
+     transform:translateX(-50%) translateY(100%);
+     
+}
+.quote4 {
+    color:#fff;
+    position: relative;
+    top:37%;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.40;
+    font-size:14px;
+    margin:0;
+    transform:translateX(200%);
+    transition: .5s all ease;
+}
+.quote1 img, .quote2 img, .quote3 img, .quote4 img {
+    max-width: 100%;
+    margin-top:10px;
+    opacity: .5;
 }
 @media(min-width:1024px) {
-    .quote1, .quote2 {  
+    .quote1, .quote2, .quote3, .quote4 {  
         font-size: 18px;
+        padding:20px;
     }
+}
+
+.reveal-item {
+    opacity: 0;
+}
+.reveal-item2 {
+    opacity: 0;
+}
+.quite-visible {
+    opacity: 1;
+    transform:translateX(0);
 }

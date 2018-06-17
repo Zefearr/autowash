@@ -12,8 +12,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
+  
     <title>AutoWash Tallinn, Madara 33</title>
 
     <!--build:css assets/styles/styles.css-->
@@ -23,20 +22,32 @@
 </head>
 
 <body>
-    <header class="site-header"></header>
+    <header class="site-header">
+        <div class="container">
+            <span class="logotip-header">AutoPesula</span>
+        </div>
+    </header>
     <div class="body-overlay"></div>
     <div class="container container-flex">
 
         <div class="left-side">
-            <p class="quote1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit aut odit eius vel id dolorum itaque magni
-                soluta. Saepe laborum sit commodi nulla reprehenderit in ab voluptas consectetur vel.</p>
+            <p class="quote1">Экологическая обстановка в наших городах далека от идеальной. В таких условиях ваш автомобиль покрывается грязью за считаные дни.
+                    <span class="arrow"></span>
+                    <img src="assets/images/road_reagent.jpg" alt="реагенты на дороге">
+            </p>
+
+            <p class="quote3">Конечно, вы можете попробовать своими силами решить проблему грязного автомобиля, но лучше.. <span class="arrow"></span>
+                <img src="assets/images/lowiq.jpg" alt="реагенты на дороге">
+
+            </p>   
+
         </div>
 
         <div class="road">
             <div class="car">
-                <div class="car-dirt"></div>
-                <div class="car-dirt2"></div>
-                <div class="car-dirt3"></div>
+                <div class="dirt car-dirt"></div>
+                <div class="dirt car-dirt2"></div>
+                <div class="dirt car-dirt3"></div>
 
                 <div class="car-img"></div>
                 <div class="wrapper">
@@ -48,6 +59,7 @@
                     </div>
                 </div>
             </div>
+            <button class="clean-it"><span>Помыть</span></button>
         </div>
 
         <span class="trigger1"></span>
@@ -55,19 +67,28 @@
         <span class="trigger3"></span>
 
         <div class="right-side">
-            <p class="quote2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit aut odit eius vel id dolorum itaque magni
-                soluta. Saepe laborum sit commodi nulla reprehenderit in ab voluptas consectetur vel.</p>
+            <p class="quote2">Весной реагенты, которыми обрабатывают дороги могут вызвать корозию кузова автомобиля. Летом, в жаркую погоду ваш автомобиль наиболее восприимчив к загрязнениям. В жару плавящийся асфальт выделяет битумные испарения, которые оседают на поверхности кузова. 
+                    <img src="assets/images/dirty_roads.png" alt="реагенты на дороге">
+                    <span class="arrow"></span>
+            </p>
+            <p class="quote4">Доверьте эту проблему профессионалам!
+                    <span class="arrow"></span>
+            </p>
         </div>
+
+
 
     </div>
     <div class="prices-info">
 
 
         <div class="forms">
+            <span class="border"></span>
 
             <!-- first-form-row -->
             <div class="form-simple-cars">
                 <div class="row">
+                    <h2 class="section-title">Прейскурант</h2>
                     <div class="select-type">
                         <button id="carsmall" class="btn active"></button>
                         <button id="carsbig" class="btn"></button>
@@ -86,7 +107,8 @@
                             <div class="form-group">
                                 <input type="checkbox" class="prices-checkbox" name="outdoorwash" value="" id="outdoorwash1" checked>
                                 <label for="outdoorwash1">
-                                    <span class="content">Растворение гудронa, мойка шампунем, полировка шин, сушка, чистка ковриков</span>
+                                    <span class="content">Растворение гудронa, мойка шампунем создающим восковой слой, основательная сушка, полировка
+                                        шин, сушка, чистка ковриков</span>
                                 </label>
                                 <span class="checkmark"></span>
 
@@ -137,8 +159,7 @@
 
                             </div>
                         </div>
-                        <h5 class="form-title">
-                            Внутренняя чистка</h5>
+                        <h5 class="form-title"> Внутренняя чистка </h5>
 
 
                         <div class="form-group">
@@ -190,25 +211,132 @@
                             <span class="checkmark"></span>
 
                         </div>
+                        <div class="total-result">
+                            <p>Всего:
+                                <span class="total" id="result"></span>
+                            </p>
+                        </div>
+
+                    </form>
+                    <!--First form ends-->
 
 
-                    </form> 
 
-                    <div class="total-result">
-                        <p>Всего:
-                            <span class="total" id="result"></span>
-                        </p>
+
+                </div>
+
+                <h5 class="service-works">
+                    <span class="cogwheel"></span> Сервисное обслуживание</h5>
+                <div class="service-stuff">
+
+
+                    <div class="item">Обработка воском, базирующаяся на технологии NANO, защитным средством, которое создаёт поверхность, отталкивающую
+                        жидкость и грязь</div>
+                    <div class="item">
+                        <div class="price">
+                            <span>Начиная с 50EUR</span>
+                        </div>
+                    </div>
+
+                    <div class="item">Полирование</div>
+                    <div class="item no-b">
+                        <div class="price">
+                            <span>Начиная с 120EUR</span>
+                        </div>
+                    </div>
+
+                    <div class="item">Глубокое полирование</div>
+                    <div class="item no-b">
+                        <div class="price">
+                            <span>Начиная с 225EUR</span>
+                        </div>
+                    </div>
+
+                    <div class="item">Химическая чистка салона</div>
+                    <div class="item no-b">
+                        <div class="price">
+                            <span>Начиная с 100EUR</span>
+                        </div>
+
+                    </div>
+
+                    <div class="item">Чистка колёсных дисков хим. средствами</div>
+                    <div class="item no-b">
+                        <div class="price">
+                            <span>4EUR</span>
+                        </div>
+
+                    </div>
+
+                    <div class="item">Мелкие и другие работы (15 мин)</div>
+                    <div class="item no-b">
+                        <div class="price">
+                            <span>6EUR</span>
+                        </div>
+
                     </div>
 
                 </div>
 
+                <h5 class="service-works bikes">
+                    <span class="bike"></span>Мотоциклы, ATV и другое</h5>
+                <div class="service-stuff">
+
+                    <div class="item">Мойка, основательная сушка</div>
+                    <div class="item no-b">
+                        <div class="price">
+                            <span>8EUR</span>
+                        </div>
+
+                    </div>
+                    <div class="item">Растворение гудрона, мойка шампунем, основательная сушка</div>
+                    <div class="item no-b">
+                        <div class="price">
+                            <span>12EUR</span>
+                        </div>
+
+                    </div>
+                    <div class="item no-border">Мойка велосипеда</div>
+                    <div class="item no-b">
+                        <div class="price">
+                            <span>4EUR</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
             </div>
+
             <!-- second-form-row -->
 
             <div class="map-section">
+                <span class="logotip"></span>
                 <div class="map">
                     <div id="map"></div>
+                </div>
 
+
+                <div class="working-hours">
+                    <img src="assets/images/photo.png" alt="Madara 33 Tallinn AutoPesula">
+                    <ul>
+                        <li>Адрес:
+                            <span>Madara 33, Tallinn</span>
+                        </li>
+                        <li>Время работы:
+                            <span>E-R 10-19</span>
+                        </li>
+                        <li>Тел:
+                            <span>56 052 020 (RUS)</span>
+                        </li>
+                        <li>
+                      <span class="space">56 799 426 (EST)</span>
+                        </li>
+                    </ul>
+
+                    <button class="coupon">Получить скидочный купон</button>
 
 
                 </div>
@@ -220,25 +348,41 @@
 
     </div>
 
-
+    <div class="coupon-container">
+        <div class="overlay-container">
+            <p>Чтобы получить скидку на любую из наших услуг, при заказе назовите следующее кодовое слово:
+                <span class="want-discount">MADARA-AUTOWASH</span>
+            </p>
+            <p>Заходите в нашу группу в facebook: </p>
+            <span class="close-overlay">X</span>
+        </div>
+    </div>
 
 
 
     <div class="footer">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste iusto quae nobis nemo quasi, harum est unde necessitatibus
-            mollitia atque omnis sint ducimus enim, optio eligendi! Odio tenetur libero, distinctio pariatur, consectetur
-            quae corporis similique et sint nostrum labore nesciunt.</p>
-    </div>
+        <div class="container">
+            <div class="footer-wrapper">
+                <p>Copyright © 2018 Autowash OU. All rights reserved. Designed by
+                    <a href="https://skdesign.ee">SKdesign</a>
+                </p>
 
-    <!-- <script src="./assets/scripts/googlemap.js" async defer></script>  -->
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdIosUR1rFZTzWmaGu_hS1oPJCWWrWWRg&callback=initMap">
-    </script>  -->
+            </div>
+        </div>
+    </div>
+    <!--build:js assets/scripts/googlemap.js-->
+    <script src="./assets/scripts/googlemap.js" async defer></script> 
+    <!--endbuild-->
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdIosUR1rFZTzWmaGu_hS1oPJCWWrWWRg&callback=initMap">
+    </script>
+  
 
 </body>
 
-  <!--build:js assets/scripts/app.js--> 
-  <script src="./temp/scripts/app.js" defer></script>
-  <!--endbuild-->  
+<!--build:js assets/scripts/app.js-->
+<script src="./temp/scripts/app.js" defer></script>
+<!--endbuild-->
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> -->
 

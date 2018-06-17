@@ -35,13 +35,13 @@ gulp.task('copeOther', ['deleteDist'], function(){
         .pipe(gulp.dest('./docs'));
 });
 gulp.task('optimizeImg', ['deleteDist'], function(){ 
-    return gulp.src(['./app/images/**/*'])
+    return gulp.src(['./app/assets/images/**/*'])
         .pipe(imgMin({
             progressive: true,
             interlaced: true,
             multipass: true
         }))
-        .pipe(gulp.dest('./docs/images')); 
+        .pipe(gulp.dest('./docs/assets/images'));  
 });
 
 gulp.task('usemin', ['deleteDist', 'styles', 'scripts'], function(){ 
