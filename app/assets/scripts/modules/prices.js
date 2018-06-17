@@ -18,6 +18,7 @@ class Prices {
         this.washtype11 = this.priceForm.querySelector('#indoorwash5');
         this.washtype12 = this.priceForm.querySelector('#indoorwash6');
 
+        this.inputs = this.priceForm.querySelectorAll('input:not(.first)');
 
         this.btns = document.querySelectorAll('.btn');
         
@@ -41,6 +42,8 @@ class Prices {
             b.addEventListener('click', this.toggleActive.bind(this));
             b.addEventListener('click', this.Calculate.bind(this));
         }
+
+       
         // this.btns.forEach((e) => {
         //     e.addEventListener('click', this.toggleActive.bind(this));
         // });
@@ -49,7 +52,7 @@ class Prices {
         // })
 
     }
-
+    
     toggleActive(e) {
         let elems = document.querySelectorAll('.active');
         [].forEach.call(elems, function (el) {
@@ -68,6 +71,8 @@ class Prices {
 
 
     Calculate() {
+      
+       
         let checkedInputs = this.priceForm.querySelectorAll(':checked');
         let total = 0;
         if (this.smallCar.classList.contains('active')) {
@@ -114,11 +119,12 @@ class Prices {
             this.washtype11.value = 2;
             this.washtype12.value = 3; 
         }
-
+       
         for (let i = 0; i < checkedInputs.length; i++) {
             total += parseInt(checkedInputs[i].value || 0);
         }
-
+       
+        
         this.result.innerHTML = `${total} EUR`;
 
     }

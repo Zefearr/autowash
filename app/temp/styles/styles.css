@@ -861,12 +861,27 @@ input[type=checkbox] {
     display: block;
     display: none;
 }
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: block;
+    display: none;
+}
 input[type=checkbox]:checked~.checkmark::before {
     -webkit-transform: rotate(45deg) scale(1);
             transform: rotate(45deg) scale(1);
     opacity: 1;
 }
 input[type=checkbox]:checked+label span {
+    color: rgb(136, 6, 6);
+}
+input[type=radio]:checked~.checkmark::before {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+    opacity: 1;
+}
+input[type=radio]:checked+label span {
     color: rgb(136, 6, 6);
 }
 .form-group {
