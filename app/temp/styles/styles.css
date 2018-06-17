@@ -348,7 +348,7 @@ template {
     position: relative; 
     /* margin: 0 auto;
     position: relative; */
-    background:url('/assets/images/mochaGrunge.png') repeat;
+    background:url('../../assets/images/mochaGrunge.png') repeat;
     background-color:rgb(114, 116, 116);
     border-left:10px solid rgb(228, 226, 221);
     border-right:10px solid rgb(228, 226, 221);
@@ -401,7 +401,7 @@ template {
     -webkit-transform:translateX(-50%);
             transform:translateX(-50%);
     transition: .1s all ease;
-    background: url('/assets/images/buble.svg');
+    background: url('../../assets/images/buble.svg');
     box-shadow: 0px 4px 2px 1px rgb(82, 82, 82);
     cursor: pointer;
 }
@@ -508,7 +508,7 @@ template {
     width:100%;
     height: 100%;
     position: relative;
-    background: url('/assets/images/car.png');  
+    background: url('../../assets/images/car.png');  
     z-index: 1;
   
 }
@@ -544,7 +544,7 @@ template {
     width: 16px; height: 28px; 
     border-radius: 5px;
     box-shadow: inset 0 0 1px 1px #2F3035; 
-    background: url('/assets/images/tire.png') repeat;
+    background: url('../../assets/images/tire.png') repeat;
     background-color: #2F3035;
     background-size: 10px auto;
     z-index: 0;
@@ -565,7 +565,7 @@ template {
     position: absolute;
     width:100%;
     height: 100%;
-    background:url('/assets/images/dirt.png');
+    background:url('../../assets/images/dirt.png');
     z-index: 2;
     opacity: 0;
      transition: 1s all ease;
@@ -575,7 +575,7 @@ template {
     position: absolute;
     width:100%;
     height: 100%;
-    background:url('/assets/images/dirt2.png');
+    background:url('../../assets/images/dirt2.png');
     z-index: 2;
     opacity: 0;
      transition: 1s all ease;
@@ -585,7 +585,7 @@ template {
     position: absolute;
     width:100%;
     height: 100%;
-    background:url('/assets/images/dirt3.png'); 
+    background:url('../../assets/images/dirt3.png'); 
     z-index: 2;
     opacity: 0;
      transition: 1s all ease;
@@ -1168,7 +1168,7 @@ span.arrow {
     width:40px;
      height: 60px;
      display: block;
-     background:url('/assets/images/arrow.svg') center no-repeat;
+     background:url('../../assets/images/arrow.svg') center no-repeat;
      position: absolute;
      bottom: 0;
      left:0;
@@ -1240,7 +1240,7 @@ span.arrow {
     width:200px;
     height: 80px;
     margin-left: 50px;
-    background:url('/assets/images/logo4.svg') center no-repeat;
+    background:url('../../assets/images/logo4.svg') center no-repeat;  
 }
 .working-hours ul {
     list-style:none;

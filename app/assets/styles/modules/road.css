@@ -37,7 +37,7 @@
     position: relative; 
     /* margin: 0 auto;
     position: relative; */
-    background:url('/assets/images/mochaGrunge.png') repeat;
+    background:url('../../assets/images/mochaGrunge.png') repeat;
     background-color:rgb(114, 116, 116);
     border-left:10px solid rgb(228, 226, 221);
     border-right:10px solid rgb(228, 226, 221);
@@ -89,7 +89,7 @@
     font-weight: 600;
     transform:translateX(-50%);
     transition: .1s all ease;
-    background: url('/assets/images/buble.svg');
+    background: url('../../assets/images/buble.svg');
     box-shadow: 0px 4px 2px 1px rgb(82, 82, 82);
     cursor: pointer;
 }
