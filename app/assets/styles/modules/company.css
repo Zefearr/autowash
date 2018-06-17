@@ -369,7 +369,7 @@ form#simple-cars-prices-services {
     height: 200px;
     display: block;
     margin: 0 auto;
-    background: url('../../assets/images/logo4.svg') center no-repeat;
+    background: url('../../assets/images/logo4.svg') center no-repeat; 
 }
 .map {
     overflow: hidden;
