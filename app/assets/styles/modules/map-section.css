@@ -2,14 +2,32 @@
     list-style:none;
     color:rgb(221, 221, 221);
     margin:0;
-    margin-top:20px;
-    border-top:1px solid white;
+    margin-top:20px; 
     padding:0;
     padding:10px;
+    flex-basis: 50%;
+    
+}
+.working-hours {
+    margin-top:20px;
+}
+@media(min-width:1366px) {
+    .working-hours {
+        display: flex;
+        overflow: hidden;
+    }
+    .working-hours ul {
+        margin-top:0;
+        padding-left: 20px;
+    }
 }
 .working-hours ul li {
-    padding:10px 0;
-    font-size: 20px;
+    padding:5px 0;
+    font-size: 16px;
+    color:rgb(211, 211, 211);
+}
+.working-hours ul li i {
+    margin-right: 5px;
 }
 .working-hours ul li span {
     font-weight: 600;
@@ -18,21 +36,21 @@
     display: block;
     margin: 0 auto;
     margin-top:20px;
-    max-width: 100%;
+    /* max-width: 100%; */
+    flex-basis: 50%;
 }
 .coupon {
-    padding:15px 20px;
+    padding:12px 15px;
     background-color:orange;
     border:none;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
-    display: block;
-    margin: 0 auto;
-    margin-top:20px;
+    display: block; 
+    margin-top:10px;
     cursor: pointer;
-    box-shadow: 0px 0px 5px 2px rgb(236, 139, 11);
+    box-shadow: 0px 0px 2px 2px rgb(236, 139, 11);
     font-weight: 600;
-    border-radius: 5px;
+   
 }
 .space {
     padding-left: 45px;
@@ -88,3 +106,17 @@
     opacity: 1;
     transform:translateX(0);
 }
+.img img {
+    max-width: 100%;
+    margin-top: 5px;
+}
+.img {
+    flex-basis: 50%;
+    overflow: hidden;
+}
+.about-company {
+    flex-basis: 50%;
+    
+}
+
+

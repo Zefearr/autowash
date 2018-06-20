@@ -11,7 +11,7 @@ class test {
         if(document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) { 
             this.header.classList.add('fixed');
         } else {
-            this.header.classList.remove('fixed'); 
+            this.header.classList.remove('fixed');  
         }
     }
 }

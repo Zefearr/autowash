@@ -981,7 +981,7 @@ form#simple-cars-prices-services {
     border: none;
     /* border:1px solid gray; */
     padding: 0;
-    box-shadow: 0 2px 3px 1px rgb(121, 121, 121);
+    box-shadow: 0 2px 0px 0px rgb(121, 121, 121);
     border: 1px solid gray;
     opacity: .2;
     outline: none;
@@ -999,10 +999,11 @@ form#simple-cars-prices-services {
     margin-right: 0;
 }
 .btn:active {
-    box-shadow: 0 2px 3px 0px rgb(121, 121, 121);
+    box-shadow: 0 1px 1px 0px rgb(121, 121, 121);
     -webkit-transform: translateY(2px);
             transform: translateY(2px);
     opacity: 1;
+    
 }
 /* .overlay {
       background: url('/assets/images/bg.jpg') center no-repeat;
@@ -1036,7 +1037,7 @@ form#simple-cars-prices-services {
 }
 .map {
     overflow: hidden;
-    height: 400px;
+    height: 500px;
    max-width:100%;
    position: relative;
    display: block;
@@ -1261,14 +1262,32 @@ span.arrow {
     list-style:none;
     color:rgb(221, 221, 221);
     margin:0;
-    margin-top:20px;
-    border-top:1px solid white;
+    margin-top:20px; 
     padding:0;
     padding:10px;
+    flex-basis: 50%;
+    
+}
+.working-hours {
+    margin-top:20px;
+}
+@media(min-width:1366px) {
+    .working-hours {
+        display: flex;
+        overflow: hidden;
+    }
+    .working-hours ul {
+        margin-top:0;
+        padding-left: 20px;
+    }
 }
 .working-hours ul li {
-    padding:10px 0;
-    font-size: 20px;
+    padding:5px 0;
+    font-size: 16px;
+    color:rgb(211, 211, 211);
+}
+.working-hours ul li i {
+    margin-right: 5px;
 }
 .working-hours ul li span {
     font-weight: 600;
@@ -1277,21 +1296,21 @@ span.arrow {
     display: block;
     margin: 0 auto;
     margin-top:20px;
-    max-width: 100%;
+    /* max-width: 100%; */
+    flex-basis: 50%;
 }
 .coupon {
-    padding:15px 20px;
+    padding:12px 15px;
     background-color:orange;
     border:none;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
-    display: block;
-    margin: 0 auto;
-    margin-top:20px;
+    display: block; 
+    margin-top:10px;
     cursor: pointer;
-    box-shadow: 0px 0px 5px 2px rgb(236, 139, 11);
+    box-shadow: 0px 0px 2px 2px rgb(236, 139, 11);
     font-weight: 600;
-    border-radius: 5px;
+   
 }
 .space {
     padding-left: 45px;
@@ -1349,4 +1368,98 @@ span.arrow {
     opacity: 1;
     -webkit-transform:translateX(0);
             transform:translateX(0);
+}
+.img img {
+    max-width: 100%;
+    margin-top: 5px;
+}
+.img {
+    flex-basis: 50%;
+    overflow: hidden;
+}
+.about-company {
+    flex-basis: 50%;
+    
+}
+.slider {
+    width:500px;
+    height: 300px;
+    display: block;
+    border:1px solid white;
+}
+#wrapper {
+    max-width:600px;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border:1px solid #31AADD;
+}
+#wrapper::after {
+    content:"";
+    display: block;
+    clear: both;
+    
+}
+.layer img {
+    display: block;
+}
+.layer {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left:0;
+    top:0;
+    overflow: hidden;
+}
+.layer.top {
+    z-index: 2;
+    width:50%;
+}
+.layer.bottom {
+    z-index: 1;
+    
+}
+.handle {
+    width:3px;
+    height: 100%;
+    position: absolute;
+    left:50%;
+    -webkit-transform:translateX(-50%);
+            transform:translateX(-50%);
+    display: block;
+    background-color:#31AADD;
+    z-index: 3;
+    cursor: e-resize;
+}
+.buble {
+    width:25px;
+    height: 25px;
+    display: block;
+    background:url('../../assets/images/buble.svg');
+    background-color:rgb(255, 255, 255);
+    
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left:0;
+    -webkit-transform:translateX(-50%);
+            transform:translateX(-50%);
+}
+.compare {
+    width:100%;
+    height: auto;
+    display: block;
+
+}
+.compare-imgs {
+  
+}
+.compare-tech {
+   border:1px solid lightgray;
+   margin-bottom:20px;
+    
+}
+.compare-tech p {
+    color:#fff;
 }

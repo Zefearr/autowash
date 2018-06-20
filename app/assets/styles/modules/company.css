@@ -326,7 +326,7 @@ form#simple-cars-prices-services {
     border: none;
     /* border:1px solid gray; */
     padding: 0;
-    box-shadow: 0 2px 3px 1px rgb(121, 121, 121);
+    box-shadow: 0 2px 0px 0px rgb(121, 121, 121);
     border: 1px solid gray;
     opacity: .2;
     outline: none;
@@ -349,9 +349,10 @@ form#simple-cars-prices-services {
 }
 
 .btn:active {
-    box-shadow: 0 2px 3px 0px rgb(121, 121, 121);
+    box-shadow: 0 1px 1px 0px rgb(121, 121, 121);
     transform: translateY(2px);
     opacity: 1;
+    
 }
 
 /* .overlay {
@@ -387,7 +388,7 @@ form#simple-cars-prices-services {
 }
 .map {
     overflow: hidden;
-    height: 400px;
+    height: 500px;
    max-width:100%;
    position: relative;
    display: block;

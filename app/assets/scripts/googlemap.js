@@ -1,7 +1,7 @@
 function initMap() {
     var carwash = {lat: 59.429360, lng: 24.722962}; 
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 16,
+      zoom: 17,
       center: carwash,
       styles: [
         // {elementType: 'geometry', stylers: [{color: '#E3E3E3'}]},
