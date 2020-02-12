@@ -2,7 +2,7 @@
   "name": "tracker",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "normalize.css": "^8.0.0",
     "waypoints": "^4.0.1"
   },
